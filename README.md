@@ -2,6 +2,13 @@
 
 This is mini-project using Play framework, Scala Language, Slick Data Layer, and Evolution to handle database migration.
 
+    Database Setting (PostgreSQL)
+    
+    Host: localhost
+    Database name: postgres
+    User: postgres
+    Password: postgres
+
 To Run project, start up Play:
                 
         sbt run

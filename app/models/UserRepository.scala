@@ -19,7 +19,7 @@ class UserRepository @Inject()(dbConfigProvider: DatabaseConfigProvider)(implici
   // These imports are important, the first one brings db into scope, which will let you do the actual db operations.
   // The second one brings the Slick DSL into scope, which lets you define the table and other queries.
   import dbConfig._
-  import profile.api._
+  import slick.jdbc.PostgresProfile.api._
 
   /**
    * Here we define the table. It will have a name of user
@@ -30,10 +30,10 @@ class UserRepository @Inject()(dbConfigProvider: DatabaseConfigProvider)(implici
     def id = column[Long]("id", O.PrimaryKey, O.AutoInc)
 
     /** The firstName column */
-    def firstName = column[String]("firstName")
+    def firstName = column[String]("firstname")
 
     /** The lastName column */
-    def lastName = column[String]("lastName")
+    def lastName = column[String]("lastname")
 
     /** The mobile column */
     def mobile = column[String]("mobile")

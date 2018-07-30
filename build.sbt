@@ -1,4 +1,4 @@
-name := """play-scala-slick-example"""
+name := """play-scala-slick-evolution"""
 
 version := "2.6.x"
 
@@ -12,6 +12,6 @@ libraryDependencies += guice
 libraryDependencies += "com.typesafe.play" %% "play-slick" % "3.0.3"
 libraryDependencies += "com.typesafe.play" %% "play-slick-evolutions" % "3.0.3"
 
-libraryDependencies += "com.h2database" % "h2" % "1.4.197"
+libraryDependencies += "org.postgresql" % "postgresql" % "42.2.1"
 
 libraryDependencies += specs2 % Test
