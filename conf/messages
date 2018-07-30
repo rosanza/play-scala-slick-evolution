@@ -1,0 +1,7 @@
+firstName = First Name
+lastName = Last Name
+mobile = Mobile
+email = Email
+age = Age
+
+user.created = You have successfully created a user!
